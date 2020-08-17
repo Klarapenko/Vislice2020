@@ -134,7 +134,7 @@ class Vislice: #namen tega je da bo zaobsegal več iger(kontejner teh iger) v se
     def ugibaj(self, id_igre, crka):
         #dobimo staro igro ven
         self.preberi_iz_datoteke()
-        trenutna_igra,_ = self.igre[id_igre]
+        trenutna_igra_ = self.igre[id_igre]
 
          #ugibamo crko, dobimo novo stanje
         novo_stanje = trenutna_igra.ugibaj(crka)
